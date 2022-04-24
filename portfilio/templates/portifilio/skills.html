@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar's Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link  rel="stylesheet" href="{% static 'portfilio/style.css' %}">
+    
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link"  aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/about">About Me</a>
+              <a class="nav-link active" style="color: blue;" href="/skills">Skills</a>
+              <a class="nav-link" href="/projects">Projects</a>
+              <a class="nav-link" href="/contact">Contact Me</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="text-center">
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Personal / Technincal Skills</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Extracurricular Activities </button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">View All</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+                <div class ="align-left">
+                    <h3>Technical Skills</h3>
+                    <p><em>Programing languages</em></p>
+                    <ul>
+                    <li>
+                        Java
+                    </li>
+                    <li>
+                        Python
+                    </li>
+                    <li>
+                        C++
+                    </li>
+                    <li>
+                        JavaScript
+                    </li>
+                    </ul>
+
+                    <p><em>Technologies and Frameworks</em></p>
+                    <ul>
+                        <li>
+                            FrontEnd (HTML, CSS , JS)
+                        </li>
+                        <li>
+                           BackEnd with Python Django 
+                        </li>
+                        <li>
+                            Node.js (Beginner)
+                        </li>
+                        <li>
+                            Android With Java (Beginner)
+                        </li>
+                        <li>
+                            Flutter (Beginner)
+                        </li>
+                    </ul>
+
+                    <h3>Personal Skills</h3>
+                    <p><em>Languages</em></p>
+                    <ul>
+                        <li>
+                            English 👉🏼 Fluent
+                        </li>
+                        <li>
+                            Arabic 👉🏼 Native
+                        </li>
+                        <li>
+                            French 👉🏼 Beginner
+                        </li>
+                    </ul>
+
+
+                    
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+                <h3>
+                    IEEE-CUSB (2021 - 2022)
+                </h3>
+                <p>Backend Instructor at IEEE-CUSB 
+                    mentored more than 50 students the baisics of JavaScript and Node.js
+                </p>
+                <h3>IMEU (2019 - 2020)</h3>
+                <p>Charity Commitee, Where we held events to help people in need 
+                    and helped with some charity organizations like resala
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+
+        <center>
+
+            <div class=" my-5">
+                <h4>Find Me On </h4>
+                <a href="https://web.facebook.com/oatef.atef/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/omarGAVAA" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/omar.ateff/" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://github.com/OmarAtef10" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/omar-atef-3232808b/" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+        </center>
+
+</footer>
+</body>
+</html>

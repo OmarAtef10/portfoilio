@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="{% static 'portfilio/style.css' %}">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 </head>
 <body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -32,13 +35,16 @@
         <li class="nav-item">
             <a class="nav-link" href="#scrollspyHeading4">Projects</a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading5">Contact</a>
+        </li>
 
     </ul>
 </nav>
 
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
-    <div class="text-center" id="scrollspyHeading1" style="margin-top: 69px">
+    <div class="text-center" id="scrollspyHeading1" style="margin-top: 100px">
         <h3>
             Hello There, My name is Omar Atef
         </h3>
@@ -51,15 +57,15 @@
     </div>
 
     <center>
-        <div id="scrollspyHeading2" style="margin-top: 69px">
+        <div id="scrollspyHeading2" style="margin-top: 100px">
             <div class="row">
                 <div class="col">
                     <div class="card mx-2" style="width: 100%">
                         <div class="center">
                             <img src="{% static 'res/fc.png' %}" class="card-img-top" alt="..."
-                                 style="height: 50%; width: 50%">
+                                 style="height: 50%; width: 50%" id="pp">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" id="uniCard">
                             <h5 class="card-title">Univeristy</h5>
                             <p class="card-text">Studying Computer Science at Faculty of Computers and Artficial
                                 Intelligence -
@@ -71,7 +77,7 @@
                         </div>
                     </div>
 
-                    <div class="card mx-2" style="width: 100%;">
+                    <div class="card mx-2" style="width: 100%;" id="gitCard">
                         <div class="center">
                             <img src="{% static 'res/git.png' %}" class="card-img-top" alt="..."
                                  style="width: 69%; height: 69%">
@@ -92,7 +98,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card mx-2" style="width: 100%;">
+                    <div class="card mx-2" style="width: 100%;" id="internCard">
                         <div class="center">
                             <img src="{% static 'res/Head office.jpg' %}" class="card-img" alt="..."
                                  style="height: 70%;width:69%;">
@@ -107,7 +113,7 @@
                     </div>
 
 
-                    <div class="card mx-2" style="width: 100%">
+                    <div class="card mx-2" style="width: 100%" id="psCard">
                         <div class="center">
                             <img src="{% static 'res/playstation5-ps5.gif' %}" class="card-img" alt="...">
                         </div>
@@ -122,358 +128,367 @@
             </div>
         </div>
     </center>
-    <div id="scrollspyHeading3" style="margin-top: 69px">
-        <div class="text-center container">
-            <div class="row">
+    <div id="scrollspyHeading3" style="margin-top: 100px">
+        <div class="row">
+            <div class="col">
+                {#                <div class="collapse multi-collapse" id="multiCollapseExample1">#}
+                <div class="card card-body">
+                    <div class="align-left">
+                        <h3>Technical Skills</h3>
+                        <p><em>Programing languages</em></p>
+                        <ul>
+                            <li>
+                                Java
+                            </li>
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                C++
+                            </li>
+                            <li>
+                                JavaScript
+                            </li>
+                        </ul>
 
-                <div class="col">
-                    <p>
-                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
-                           aria-expanded="false" aria-controls="multiCollapseExample1"
-                           style="font-size: 90%;">Toggle
-                            Personal /
-                            Technical Skills</a>
+                        <p><em>Technologies and Frameworks</em></p>
+                        <ul>
+                            <li>
+                                FrontEnd (HTML, CSS , JS)
+                            </li>
+                            <li>
+                                BackEnd with Python Django
+                            </li>
+                            <li>
+                                Node.js (Beginner)
+                            </li>
+                            <li>
+                                Android With Java (Beginner)
+                            </li>
+                            <li>
+                                Flutter (Beginner)
+                            </li>
+                        </ul>
+
+                        <h3>Personal Skills</h3>
+                        <p><em>Languages</em></p>
+                        <ul>
+                            <li>
+                                English 👉🏼 Fluent
+                            </li>
+                            <li>
+                                Arabic 👉🏼 Native
+                            </li>
+                            <li>
+                                French 👉🏼 Beginner
+                            </li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                {#                <div class="collapse multi-collapse" id="multiCollapseExample2">#}
+                <div class="card card-body">
+                    <h3>
+                        IEEE-CUSB (2021 - 2022)
+                    </h3>
+                    <p>Backend Instructor at IEEE-CUSB
+                        mentored more than 50 students the baisics of JavaScript and Node.js
+                    </p>
+                    <h3>IMEU (2019 - 2020)</h3>
+                    <p>Charity Commitee, Where we held events to help people in need
+                        and helped with some charity organizations like resala
                     </p>
                 </div>
-                <div class="col">
+            </div>
+        </div>
+    </div>
+
+    <div id="scrollspyHeading4" style="margin-top: 100px">
+
+        <center>
+
+
+            <div class="container row  text-center">
+                <div class="text-center">
+                    <h4><em>Select Preferred Language / Framework</em></h4>
+                </div>
+                <div class="text-center container">
                     <p>
                         <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#multiCollapseExample2"
-                                aria-expanded="false" aria-controls="multiCollapseExample2" style="font-size: 90%">
-                            Toggle Extracurricular Activities
+                                data-bs-target=".multi-collapse"
+                                aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"
+                                style="font-size: 100%">View All
                         </button>
                     </p>
                 </div>
-            </div>
-            <p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target=".multi-collapse"
-                        aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2"
-                        style="font-size: 85%">View All
-                </button>
-            </p>
-        </div>
-        <div class="row">
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample1">
-                    <div class="card card-body">
-                        <div class="align-left">
-                            <h3>Technical Skills</h3>
-                            <p><em>Programing languages</em></p>
-                            <ul>
-                                <li>
-                                    Java
-                                </li>
-                                <li>
-                                    Python
-                                </li>
-                                <li>
-                                    C++
-                                </li>
-                                <li>
-                                    JavaScript
-                                </li>
-                            </ul>
+                <div class="col ">
+                    <img src="{% static 'res/Java-Logo.png' %}" style="height: 100px;" class="btn"
+                         data-bs-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false"
+                         aria-controls="multiCollapseExample1">
 
-                            <p><em>Technologies and Frameworks</em></p>
-                            <ul>
-                                <li>
-                                    FrontEnd (HTML, CSS , JS)
-                                </li>
-                                <li>
-                                    BackEnd with Python Django
-                                </li>
-                                <li>
-                                    Node.js (Beginner)
-                                </li>
-                                <li>
-                                    Android With Java (Beginner)
-                                </li>
-                                <li>
-                                    Flutter (Beginner)
-                                </li>
-                            </ul>
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample6">
+                            <div class="card card-body">
+                                <div class="align-left">
+                                    <ul>
+                                        <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/CarWorkshop"
+                                               target="_blank">
+                                                <strong> Car Workshop System (FreeLancing Project)</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="projects"
+                                               href="https://github.com/OmarAtef10/OnDriver-Project"
+                                               target="_blank">
+                                                <strong>On Driver (Uber Backend Clone - Java SpringBoot)</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/NBE-Queue"
+                                               target="_blank">
+                                                <strong>NBE Queue (Internship Project)</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="projects"
+                                               href="https://github.com/OmarAtef10/CPU-Scheduling-JAVA"
+                                               target="_blank">
+                                                <strong>CPU Scheduling</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/Disk-Scheduling"
+                                               target="_blank">
+                                                <strong>Disk Scheduling</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="projects"
+                                               href="https://github.com/OmarAtef10/StandardHuffman_Compression-Decompression_JAVA"
+                                               target="_blank">
+                                                <strong>Huffman Compression / Decompression</strong>
+                                            </a>
+                                        </li>
 
-                            <h3>Personal Skills</h3>
-                            <p><em>Languages</em></p>
-                            <ul>
-                                <li>
-                                    English 👉🏼 Fluent
-                                </li>
-                                <li>
-                                    Arabic 👉🏼 Native
-                                </li>
-                                <li>
-                                    French 👉🏼 Beginner
-                                </li>
-                            </ul>
+                                        <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/problem-solving"
+                                               target="_blank">
+                                                <strong>Problem Solving</strong>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col my-3 mx-2">
+                    <img src="{% static 'res/cpp.png' %}" style="height: 100px;" class="btn"
+                         data-bs-toggle="collapse"
+                         href="#multiCollapseExample7" role="button" aria-expanded="false"
+                         aria-controls="multiCollapseExample1">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample7">
+                            <div class="card card-body">
+                                <div class="align-left">
+                                    <ul>
+                                        <li>
+                                            <a class="projects"
+                                               href="https://github.com/OmarAtef10/Social_Network_CPLUSPLUS_Demo"
+                                               target="_blank">
+                                                <strong>Social Network</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="projects"
+                                               href="https://github.com/OmarAtef10/Dynamic-Programming-"
+                                               target="_blank">
+                                                <strong>Dynamic Programming</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/problem-solving"
+                                               target="_blank">
+                                                <strong>Problem Solving</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
 
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col my-3 mx-2">
+                    <img src="{% static 'res/pyth.png' %}" style="height: 100px;" class="btn"
+                         data-bs-toggle="collapse"
+                         href="#multiCollapseExample3" role="button" aria-expanded="false"
+                         aria-controls="multiCollapseExample1">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample3">
+                            <div class="card card-body">
+                                <div class="align-left">
+                                    <ul>
+                                        <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/Computer-Vision"
+                                               target="_blank">
+                                                <strong>Virtual Mouse (Computer Vision)</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/portfoilio"
+                                               target="_blank">
+                                                <strong>Omar's Portfolio (Django)</strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/Web-Project"
+                                               target="_blank">
+                                                <strong>Online University System (Django)</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="collapse multi-collapse" id="multiCollapseExample2">
-                    <div class="card card-body">
-                        <h3>
-                            IEEE-CUSB (2021 - 2022)
-                        </h3>
-                        <p>Backend Instructor at IEEE-CUSB
-                            mentored more than 50 students the baisics of JavaScript and Node.js
-                        </p>
-                        <h3>IMEU (2019 - 2020)</h3>
-                        <p>Charity Commitee, Where we held events to help people in need
-                            and helped with some charity organizations like resala
-                        </p>
+
+                <div class="col my-3 mx-2">
+                    <img src="{% static 'res/and.png' %}" style="height: 100px;" class="btn"
+                         data-bs-toggle="collapse"
+                         href="#multiCollapseExample4" role="button" aria-expanded="false"
+                         aria-controls="multiCollapseExample1">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample4">
+                            <div class="card card-body">
+                                <div class="align-left">
+
+                                    <ul>
+                                        <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/miwok-app"
+                                               target="_blank">
+                                                <strong>Miwok App</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col my-3 mx-2">
+                    <img src="{% static 'res/fl.png' %}" style="height: 100px;" class="btn"
+                         data-bs-toggle="collapse"
+                         href="#multiCollapseExample5" role="button" aria-expanded="false"
+                         aria-controls="multiCollapseExample1">
+
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample5">
+                            <div class="card card-body">
+                                <div class="align-left">
+
+                                    <ul>
+                                        <li>
+                                            <a class="projects"
+                                               href="https://github.com/OmarAtef10/Final-task-DSC-Flutter-"
+                                               target="_blank">
+                                                <strong>ToDo List App</strong>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a class="projects"
+                                               href="https://github.com/OmarAtef10/Flutter-Email-App"
+                                               target="_blank">
+                                                <strong>Email App</strong>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
+            </div>
+
+
+        </center>
     </div>
-
-</div>
-
-<div id="scrollspyHeading4" style="margin-top: 69px">
-
-
     <center>
-
-
-        <div class="container row  text-center">
-            <div class="text-center">
-                <h4><em>Select Preferred Language / Framework</em></h4>
-            </div>
-            <div class="col ">
-                <img src="{% static 'res/Java-Logo.png' %}" style="height: 100px;" class="btn"
-                     data-bs-toggle="collapse" href="#multiCollapseExample6" role="button" aria-expanded="false"
-                     aria-controls="multiCollapseExample1">
-
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample6">
-                        <div class="card card-body">
-                            <div class="align-left">
-                                <ul>
-                                    <li>
-                                        <a class="projects" href="https://github.com/OmarAtef10/CarWorkshop"
-                                           target="_blank">
-                                            <strong> Car Workshop System (FreeLancing Project)</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="projects"
-                                           href="https://github.com/OmarAtef10/OnDriver-Project"
-                                           target="_blank">
-                                            <strong>On Driver (Uber Backend Clone - Java SpringBoot)</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="projects" href="https://github.com/OmarAtef10/NBE-Queue"
-                                           target="_blank">
-                                            <strong>NBE Queue (Internship Project)</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="projects"
-                                           href="https://github.com/OmarAtef10/CPU-Scheduling-JAVA"
-                                           target="_blank">
-                                            <strong>CPU Scheduling</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="projects" href="https://github.com/OmarAtef10/Disk-Scheduling"
-                                           target="_blank">
-                                            <strong>Disk Scheduling</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="projects"
-                                           href="https://github.com/OmarAtef10/StandardHuffman_Compression-Decompression_JAVA"
-                                           target="_blank">
-                                            <strong>Huffman Compression / Decompression</strong>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a class="projects" href="https://github.com/OmarAtef10/problem-solving"
-                                           target="_blank">
-                                            <strong>Problem Solving</strong>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col my-3 mx-2">
-                <img src="{% static 'res/cpp.png' %}" style="height: 100px;" class="btn"
-                     data-bs-toggle="collapse"
-                     href="#multiCollapseExample7" role="button" aria-expanded="false"
-                     aria-controls="multiCollapseExample1">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample7">
-                        <div class="card card-body">
-                            <div class="align-left">
-                                <ul>
-                                    <li>
-                                        <a class="projects"
-                                           href="https://github.com/OmarAtef10/Social_Network_CPLUSPLUS_Demo"
-                                           target="_blank">
-                                            <strong>Social Network</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="projects"
-                                           href="https://github.com/OmarAtef10/Dynamic-Programming-"
-                                           target="_blank">
-                                            <strong>Dynamic Programming</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="projects" href="https://github.com/OmarAtef10/problem-solving"
-                                           target="_blank">
-                                            <strong>Problem Solving</strong>
-                                        </a>
-                                    </li>
-                                </ul>
-
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="col my-3 mx-2">
-                <img src="{% static 'res/pyth.png' %}" style="height: 100px;" class="btn"
-                     data-bs-toggle="collapse"
-                     href="#multiCollapseExample3" role="button" aria-expanded="false"
-                     aria-controls="multiCollapseExample1">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample3">
-                        <div class="card card-body">
-                            <div class="align-left">
-                                <ul>
-                                    <li>
-                                        <a class="projects" href="https://github.com/OmarAtef10/Computer-Vision"
-                                           target="_blank">
-                                            <strong>Virtual Mouse (Computer Vision)</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="projects" href="https://github.com/OmarAtef10/portfoilio"
-                                           target="_blank">
-                                            <strong>Omar's Portfolio (Django)</strong>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="projects" href="https://github.com/OmarAtef10/Web-Project"
-                                           target="_blank">
-                                            <strong>Online University System (Django)</strong>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col my-3 mx-2">
-                <img src="{% static 'res/and.png' %}" style="height: 100px;" class="btn"
-                     data-bs-toggle="collapse"
-                     href="#multiCollapseExample4" role="button" aria-expanded="false"
-                     aria-controls="multiCollapseExample1">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample4">
-                        <div class="card card-body">
-                            <div class="align-left">
-
-                                <ul>
-                                    <li>
-                                        <a class="projects" href="https://github.com/OmarAtef10/miwok-app"
-                                           target="_blank">
-                                            <strong>Miwok App</strong>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col my-3 mx-2">
-                <img src="{% static 'res/fl.png' %}" style="height: 100px;" class="btn"
-                     data-bs-toggle="collapse"
-                     href="#multiCollapseExample5" role="button" aria-expanded="false"
-                     aria-controls="multiCollapseExample1">
-
-                <div class="col">
-                    <div class="collapse multi-collapse" id="multiCollapseExample5">
-                        <div class="card card-body">
-                            <div class="align-left">
-
-                                <ul>
-                                    <li>
-                                        <a class="projects"
-                                           href="https://github.com/OmarAtef10/Final-task-DSC-Flutter-"
-                                           target="_blank">
-                                            <strong>ToDo List App</strong>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a class="projects"
-                                           href="https://github.com/OmarAtef10/Flutter-Email-App"
-                                           target="_blank">
-                                            <strong>Email App</strong>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-
+        <!-- The actual snackbar -->
+        <div id="snackbar">PSN: omaratef100</div>
     </center>
 
+    <div id="scrollspyHeading5" style="margin-top: 100px">
 
-</div>
+        <div class="container text-center" style="width: 80%">
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-</div>
-</div>
+            <p><h4>Why Won't You Send an Email 😉</h4></p>
 
-<center>
-    <!-- The actual snackbar -->
-    <div id="snackbar">PSN: omaratef100</div>
-</center>
+            <form action="{% url 'contact' %}" method="post" class="contact__form">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Email</span>
+                    <input type="text" class="form-control" name ="contact__Email" placeholder="Username" aria-label="Username"
+                           aria-describedby="basic-addon1">
+                </div>
 
 
-<footer>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="contact__Subject" placeholder="Subject"
+                           aria-label="Username">
+                </div>
 
-    <center>
-        <div class=" my-5 mx-2 text-center">
-            <h4>Find Me On </h4>
-            <a href="https://web.facebook.com/oatef.atef/" target="_blank" class="fa fa-facebook"></a>
-            <a href="https://twitter.com/omarGAVAA" target="_blank" class="fa fa-twitter"></a>
-            <a href="https://www.instagram.com/omar.ateff/" target="_blank" class="fa fa-instagram"></a>
-            <a href="https://github.com/OmarAtef10" target="_blank" class="fa fa-github"></a>
-            <a href="https://www.linkedin.com/in/omar-atef-3232808b/" target="_blank" class="fa fa-linkedin"></a>
+                <div class="input-group">
+                    <span class="input-group-text contact__Message">Write Your Message Here 💁‍♂</span>
+                    <textarea class="form-control" aria-label="With textarea" name="contact__Message"></textarea>
+                </div>
+
+                <input type="submit" value="Send Mail!" class="btn btn-primary contact__button"
+                       style="margin-top: 20px"/>
+            </form>
         </div>
-    </center>
-</footer>
-<script src="{% static 'portfilio/snack.js' %}"></script>
+        <footer>
+
+            <center>
+                <div class=" my-5 mx-2 text-center">
+                    <h4>Find Me On </h4>
+                    <a href="https://web.facebook.com/oatef.atef/" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/omarGAVAA" target="_blank" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/omar.ateff/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://github.com/OmarAtef10" target="_blank" class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/omar-atef-3232808b/" target="_blank"
+                       class="fa fa-linkedin"></a>
+                </div>
+            </center>
+        </footer>
+    </div>
+    <script src="{% static 'portfilio/snack.js' %}"></script>
+
+    <script>
+        ScrollReveal({reset: true});
+        ScrollReveal().reveal('#scrollspyHeading1', {delay: 250, origin: screenLeft});
+        ScrollReveal().reveal('#scrollspyHeading2', {delay: 250, origin: screenLeft});
+        ScrollReveal().reveal('#scrollspyHeading3', {delay: 250, origin: screenLeft});
+        ScrollReveal().reveal('#scrollspyHeading4', {delay: 250, origin: screenY});
+        ScrollReveal().reveal('#scrollspyHeading5', {delay: 250, origin: screenX});
+    </script>
+
+</div>
 </body>
 </html>

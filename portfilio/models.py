@@ -12,3 +12,8 @@ class Message(models.Model):
     Subject = models.CharField(max_length=500)
     Message = models.TextField()
     id = models.DateTimeField(primary_key=True, editable=False, auto_now_add=True)
+
+    def __str__(self):
+        return str(self.Username) + " Sent " + str(self.Subject)
+
+

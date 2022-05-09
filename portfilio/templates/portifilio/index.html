@@ -43,20 +43,39 @@
 
 <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
-    <div class="text-center" id="scrollspyHeading1" style="margin-top: 100px">
-        <h3>
-            Hello There, My name is Omar Atef
-        </h3>
-        <p>I'm a student at Faculty of Computers and Artificial Intelligence <br>
-            who is eager to learn new stuff
-        </p>
 
-        <img src="{% static 'res/pp.jpg' %}" alt="Avatar" style="width:350px;">
+    <div class="card center" id="scrollspyHeading1">
+        <br><br>
 
+        <div class="card-header text-center">
+            Home
+        </div>
+        <div class="card-body text-center">
+            <div class="row">
+                <div class="col ">
+                    <br>
+                    <h5 class="card-title">
+                        Hello There, My name is Omar Atef
+                    </h5>
+                    <p class="card-text">I'm a student in the Faculty of Computers and Artificial Intelligence <br>
+                        who is eager to learn new stuff</p>
+                </div>
+                <div class="col">
+                    <br>
+                    <img id="pp" src="{% static 'res/pp.jpg' %}" alt="Avatar"
+                         style="width:325px; height: 350px; border-radius: 25%">
+                </div>
+            </div>
+        </div>
     </div>
+
 
     <center>
         <div id="scrollspyHeading2" style="margin-top: 100px">
+
+            <div class="card-header text-center">
+                About
+            </div>
             <div class="row">
                 <div class="col">
                     <div class="card mx-2" style="width: 100%">
@@ -128,6 +147,10 @@
         </div>
     </center>
     <div id="scrollspyHeading3" style="margin-top: 100px">
+
+        <div class="card-header text-center">
+            Skills
+        </div>
         <div class="row">
             <div class="col">
                 {#                <div class="collapse multi-collapse" id="multiCollapseExample1">#}
@@ -207,9 +230,10 @@
 
     <div id="scrollspyHeading4" style="margin-top: 100px">
 
+        <div class="card-header text-center">
+            Projects
+        </div>
         <center>
-
-
             <div class="container row  text-center">
                 <div class="text-center">
                     <h4><em>Select Preferred Language / Framework</em></h4>
@@ -421,11 +445,11 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
         </center>
+
+        <br>
+
     </div>
     <center>
         <!-- The actual snackbar -->
@@ -433,7 +457,9 @@
     </center>
 
     <div id="scrollspyHeading5" style="margin-top: 100px">
-
+        <div class="card-header text-center">
+            Contact
+        </div>
         <div class="container text-center" style="width: 80%">
             <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
@@ -449,7 +475,7 @@
 
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Email</span>
-                    {{form.Email}}
+                    {{ form.Email }}
                 </div>
 
 
@@ -458,13 +484,15 @@
                 </div>
 
                 <div class="input-group">
-                    <span class="input-group-text">Write Your Message Here 💁‍♂</span>
+                    <span class="input-group-text" style="width: 50%;">Write Your<br>
+                        Message Here 💁‍♂</span>
                     {{ form.Message }}
                 </div>
 
                 <input type="submit" value="Send Mail!" class="btn btn-primary contact__button"
                        style="margin-top: 20px"/>
             </form>
+            <br><br>
         </div>
         <footer>
 
@@ -485,11 +513,11 @@
 
     <script>
         ScrollReveal({reset: true});
-        ScrollReveal().reveal('#scrollspyHeading1', {delay: 250, origin: screenLeft});
+        ScrollReveal().reveal('#scrollspyHeading1', {delay: 250, origin: screen});
         ScrollReveal().reveal('#scrollspyHeading2', {delay: 250, origin: screen});
-        ScrollReveal().reveal('#scrollspyHeading3', {delay: 250, origin: screenLeft});
-        ScrollReveal().reveal('#scrollspyHeading4', {delay: 250, origin: screen});
-        ScrollReveal().reveal('#scrollspyHeading5', {delay: 250, origin: screen});
+        ScrollReveal().reveal('#scrollspyHeading3', {delay: 250, origin: screen});
+        {#ScrollReveal().reveal('#scrollspyHeading4', {delay: 250, origin: screen});#}
+        {#ScrollReveal().reveal('#scrollspyHeading5', {delay: 250, origin: screen});#}
     </script>
 
 </div>

@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="{% static 'portfilio/style.css' %}">
+    <link rel="stylesheet" href="{% static 'portfilio/animate.css' %}">
+
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </head>
 <body>
@@ -48,114 +49,114 @@
         <br><br>
 
         <div class="card-header text-center">
-            <h5>Home</h5>
+            <h5 class="animate__animated animate__bounceInDown">Home</h5>
         </div>
         <div class="card-body text-center">
             <div class="row">
-                <div class="col ">
+                <div class="row text-center">
                     <br>
-                    <h5 class="card-title">
-                        Hello There, My name is Omar Atef
+                    <center>
+                        <img id="pp" src="{% static 'res/pp.jpg' %}" alt="Avatar"
+                             style="width:300px; height: 350px; border-radius: 50000% ; margin-bottom: 25px">
+                    </center>
+                </div>
+                <div class="row">
+                    <br>
+                    <h5 class="card-title animate__animated animate__bounce animate__delay-1s">
+                        Hello There, My name is Omar Atef <span class="wave">👋🏼</span>
                     </h5>
                     <p class="card-text">I'm a student in the Faculty of Computers and Artificial Intelligence <br>
-                        who is eager to learn new stuff</p>
+                        who is eager to learn new stuff 👨🏼‍💻</p>
                 </div>
-                <div class="col">
-                    <br>
-                    <img id="pp" src="{% static 'res/pp.jpg' %}" alt="Avatar"
-                         style="width:325px; height: 350px; border-radius: 25%">
-                </div>
+
             </div>
         </div>
     </div>
 
 
-    <center>
-        <div id="scrollspyHeading2" style="margin-top: 100px">
-
+    <div id="scrollspyHeading2" style="margin-top: 100px">
         <div class="card-header text-center" style="margin-left: 10px">
-            <h5>About</h5>
+            <h5 class="animate__animated animate__heartBeat animate__delay-2s animate__repeat-2">About</h5>
         </div>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <div class="card mx-2" style="width: 100%">
-                        <div class="center">
-                            <img src="{% static 'res/fc.png' %}" class="card-img-top" alt="..."
-                                 style="height: 50%; width: 50%" id="pp">
-                        </div>
-                        <div class="card-body" id="uniCard">
-                            <h5 class="card-title">Univeristy</h5>
-                            <p class="card-text">Studying Computer Science at Faculty of Computers and Artficial
-                                Intelligence -
-                                Cairo University (FCAI) <br>
-                                Currently in third grade with accumilative GPA of 3.35 (B+)
-                            </p>
-                            <a href="https://fci.cu.edu.eg/Home" target="_blank" class="btn btn-primary">FCAI
-                                website</a>
-                        </div>
+        <br>
+        <div class="row">
+            <div class="col text-center">
+                <div class="card mx-2" style="width: 100%">
+                    <div class="center">
+                        <img src="{% static 'res/fc.png' %}" class="card-img-top" alt="..."
+                             style="height: 50%; width: 50%" id="pp">
                     </div>
-
-                    <div class="card mx-2" style="width: 100%;" id="gitCard">
-                        <div class="center">
-                            <img src="{% static 'res/git.png' %}" class="card-img-top" alt="..."
-                                 style="width: 69%; height: 69%">
-                        </div>
-                        <div class="card-body my-5">
-                            <h5 class="card-title">Problem Solving</h5>
-                            <br>
-                            <p class="card-text">Over 500+ problems solved on problem solving websites as LeetCode,
-                                HackerRank
-                                and
-                                CodeForces
-                            </p>
-                            <br> <br> <br>
-                            <a href="https://github.com/OmarAtef10/problem-solving" target="_blank"
-                               class="btn btn-primary">Github
-                                Repo</a>
-                        </div>
+                    <div class="card-body" id="uniCard">
+                        <h5 class="card-title">Univeristy</h5>
+                        <p class="card-text">Studying Computer Science at Faculty of Computers and Artficial
+                            Intelligence -
+                            Cairo University (FCAI) <br>
+                            Currently in third grade with accumilative GPA of 3.35 (B+)
+                        </p>
+                        <a href="https://fci.cu.edu.eg/Home" target="_blank" class="btn btn-primary">FCAI
+                            website</a>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card mx-2" style="width: 100%;" id="internCard">
-                        <div class="center">
-                            <img src="{% static 'res/Head office.jpg' %}" class="card-img" alt="..."
-                                 style="height: 70%;width:69%;">
-                        </div>
-                        <div class="card-body my-5">
-                            <h5 class="card-title">IT Intern</h5>
-                            <p class="card-text">IT intern at National Bank of Egypt (NBE) - summer 2020
-                            </p>
-                            <a href="https://drive.google.com/file/d/1EwaJRWTAXZkkKfOazHDkBDbSQ7zYKCLY/view?usp=sharing"
-                               target="_blank" class="btn btn-primary">Certificate</a>
-                        </div>
+
+                <div class="card mx-2 text-center" style="width: 100%;" id="gitCard">
+                    <div class="center">
+                        <img src="{% static 'res/git.png' %}" class="card-img-top" alt="..."
+                             style="width: 69%; height: 69%">
                     </div>
+                    <div class="card-body my-5">
+                        <h5 class="card-title">Problem Solving</h5>
+                        <br>
+                        <p class="card-text">Over 500+ problems solved on problem solving websites as LeetCode,
+                            HackerRank
+                            and
+                            CodeForces
+                        </p>
+                        <br> <br> <br>
+                        <a href="https://github.com/OmarAtef10/problem-solving" target="_blank"
+                           class="btn btn-primary">Github
+                            Repo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-2 text-center" style="width: 100%;" id="internCard">
+                    <div class="center">
+                        <img src="{% static 'res/Head office.jpg' %}" class="card-img" alt="..."
+                             style="height: 70%;width:69%;">
+                    </div>
+                    <div class="card-body my-5">
+                        <h5 class="card-title">IT Intern</h5>
+                        <p class="card-text">IT intern at National Bank of Egypt (NBE) - summer 2020
+                        </p>
+                        <a href="https://drive.google.com/file/d/1EwaJRWTAXZkkKfOazHDkBDbSQ7zYKCLY/view?usp=sharing"
+                           target="_blank" class="btn btn-primary">Certificate</a>
+                    </div>
+                </div>
 
 
-                    <div class="card mx-2" style="width: 100%" id="psCard">
-                        <div class="center">
-                            <img src="{% static 'res/playstation5-ps5.gif' %}" class="card-img" alt="...">
-                        </div>
-                        <div class="card-body my-5">
-                            <h5 class="card-title">Gaming</h5>
-                            <p class="card-text">Since I love Gaming so i'd also include my Gamertag
-                            </p>
-                            <button type="button" class="btn btn-primary" onclick="myFunction()">Show GamerTag</button>
-                        </div>
+                <div class="card mx-2 text-center" style="width: 100%" id="psCard">
+                    <div class="center">
+                        <img src="{% static 'res/playstation5-ps5.gif' %}" class="card-img" alt="...">
+                    </div>
+                    <div class="card-body my-5">
+                        <h5 class="card-title">Gaming</h5>
+                        <p class="card-text">Since I love Gaming so i'd also include my Gamertag
+                        </p>
+                        <button type="button" class="btn btn-primary" onclick="myFunction()">Show GamerTag</button>
                     </div>
                 </div>
             </div>
         </div>
-    </center>
-    <div id="scrollspyHeading3" style="margin-top: 100px">
+    </div>
 
+    <div id="scrollspyHeading3" style="margin-top: 100px">
         <div class="card-header text-center" style="margin-left: 10px">
-            <h5>Skills</h5>
+            <h5 class="animate__animated animate__heartBeat animate__delay-3s animate__repeat-3">Skills /
+                Extracurricular Activities </h5>
         </div>
         <br>
         <div class="row">
             <div class="col">
-                {#                <div class="collapse multi-collapse" id="multiCollapseExample1">#}
                 <div class="card card-body">
                     <div class="align-left">
                         <h3>Technical Skills</h3>
@@ -233,7 +234,7 @@
     <div id="scrollspyHeading4" style="margin-top: 100px">
 
         <div class="card-header text-center" style="margin-left: 10px">
-            <h5>Projects</h5>
+            <h5 class="animate__animated animate__flash animate__delay-5s animate__repeat-3">Projects</h5>
         </div>
         <br>
         <center>
@@ -366,6 +367,12 @@
                                 <div class="align-left">
                                     <ul>
                                         <li>
+                                            <a class="projects" href="https://github.com/OmarAtef10/Chinese-Checker-AI"
+                                               target="_blank">
+                                                <strong>Chinese Checker Ai</strong>
+                                            </a>
+                                        </li>
+                                        <li>
                                             <a class="projects" href="https://github.com/OmarAtef10/Computer-Vision"
                                                target="_blank">
                                                 <strong>Virtual Mouse (Computer Vision)</strong>
@@ -462,7 +469,7 @@
     <div id="scrollspyHeading5" style="margin-top: 100px">
 
         <div class="card-header text-center" style="margin-left: 10px">
-            <h5>Contact</h5>
+            <h5 class="animate__animated animate__flash animate__delay-5s animate__repeat-3">Contact</h5>
         </div>
         <br>
         <div class="container text-center" style="width: 80%">
@@ -494,8 +501,10 @@
                     {{ form.Message }}
                 </div>
 
-                <input type="submit" value="Send Mail!" class="btn btn-primary contact__button"
-                       style="margin-top: 20px"/>
+                <a href="/contact">
+                    <input type="submit" value="Send Mail!" class="btn btn-primary contact__button"
+                           style="margin-top: 20px"/>
+                </a>
             </form>
             <br><br>
         </div>
@@ -515,16 +524,6 @@
         </footer>
     </div>
     <script src="{% static 'portfilio/snack.js' %}"></script>
-
-    <script>
-        ScrollReveal({reset: false});
-        ScrollReveal().reveal('#scrollspyHeading1', {delay: 250, origin: screen});
-        ScrollReveal().reveal('#scrollspyHeading2', {delay: 250, origin: screen});
-        ScrollReveal().reveal('#scrollspyHeading3', {delay: 250, origin: screen});
-        ScrollReveal().reveal('#scrollspyHeading4', {delay: 250, origin: screen});
-        ScrollReveal().reveal('#scrollspyHeading5', {delay: 250, origin: screen});
-    </script>
-
 </div>
 </body>
 </html>

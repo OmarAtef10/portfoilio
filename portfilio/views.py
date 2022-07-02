@@ -12,5 +12,10 @@ def main(request):
         if form.is_valid():
             form.save()
             print("Working!!!!!!!")
+            return redirect('contact')
     context = {'form': form}
     return render(request, 'portifilio/index.html', context)
+
+
+def mailSent(requset):
+    return render(requset, 'portifilio/contact.html')
